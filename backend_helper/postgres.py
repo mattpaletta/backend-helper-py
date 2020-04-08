@@ -2,7 +2,7 @@ import logging
 from threading import Semaphore
 from time import sleep
 
-import psycopg2
+import psycopg2.pool
 
 
 class ReallyThreadedConnectionPool(psycopg2.pool.ThreadedConnectionPool):
